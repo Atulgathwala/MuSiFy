@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    height: 120vh;
+    width: 100vw;
+
+    background-image: url(./musicfy_background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* nav bar */
+
+nav{
+
+    height: 10vh;
+    width: 100vw;
+    border-bottom: 0.9px solid rgb(170, 168, 168);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 3vw;
+
+    div{
+    
+    
+        
+
+        img{
+            height: 10vh;
+            width: 6vw;
+        }
+    }
+
+
+}
+
+
+#home{
+    font-size: 1.5vw;
+}
+
+#searchbar{
+height: 5vh;
+width: 20vw;
+padding-left: 2vw ;
+font-size: 1.2vw;
+border-radius: 1.5vw;
+color: white;
+background: transparent;
+border: solid white;
+
+}
+
+#toph1{
+    margin-top: 2vh;
+    font-size: 3vw;
+    /* text-shadow: 2px 2px 0.2px rgb(21, 20, 20); */
+}
+
+
+/* sliding bar */
+
+
+#Slider {
+    position: relative;
+    height: 37vh;
+    border: solid white;
+    width: 95vw;
+    border: solid wheat;
+    margin: auto;
+    padding: 10px;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border: none;
+}
+/* Hide the scrollbar */
+#Slider::-webkit-scrollbar {
+    display: none;
+}
+
+.cards {
+    z-index: 5;
+    position: relative;
+    display: inline-block;
+    height: 32vh;
+    width: 13vw;
+    /* border: solid white; */
+    
+    margin: 0 1vw;
+    /* background-image: url(./drishiyan.png); */
+    background-size: contain;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+.number{
+    
+    font-size: 15vh;
+    -webkit-text-stroke: 2px rgb(246, 242, 242);
+    font-weight: bolder;
+    color: black;
+    font-family: sans-serif;
+    top: 17vh;
+    left: -2vw;
+  
+    position: absolute;
+
+
+}
+
+#recentadded{
+    position: absolute;
+    height: 3.5vh;
+    width: 8vw;
+    background-color: red;
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+    font-family: sans-serif;
+ 
+    left: 1.9vw;
+    bottom: 0vh;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 5px;
+   
+}
+
+.cards:hover {
+    transform: scale(1.05);
+   
+}
+
+
+/* Embeding the images in cards */
+#card1{
+    background-image: url(./diljit.png);
+    background-size: cover;
+}
+#card2{
+    background-image: url(./guruji.png);
+    background-size: cover;
+}
+#card3{
+    background-image: url(./parmishVERMA.png);
+    background-size: cover;
+}
+#card4{
+    background-image: url(./ninza.png);
+    background-size: cover;
+}
+#card5{
+    background-image: url(./shubh.png);
+    background-size: cover;
+}
+#card6{
+    background-image: url(./SardarNi.png);
+    background-size: cover;
+}
+#card7{
+    background-image: url(./1.jpg);
+    background-size: cover;
+}
+#card8{
+    background-image: url(./4.jpg);
+    background-size: cover;
+}
+#card9{
+    background-image: url(./5.jpg);
+    background-size: cover;
+}
+#card10{
+    background-image: url(./6.jpg);
+    background-size: cover;
+}
+
+/* under the cards  */
+#getMoreP{
+    font-size: 30px;
+    color: white;
+    margin: 3vh 8vw;
+    font-family: sans-serif;
+    font-weight: 500;
+
+
+}
+
+/* Play Music  Section*/
+#playMusic{
+
+    height: 20vh;
+    width: 80vw;
+    margin: 5vh auto 2vh auto;
+    /* border: solid white; */
+    display: flex;
+    flex-direction: row;
+}
+
+#leftDiv{
+    height:10vh;
+    width: 40vw;
+
+    /* border: solid white; */
+
+    img{
+        margin-top: 2vh;
+        height: 4vh;
+        width: 12vw;
+    }
+
+    marquee{
+        font-size: 2vw;
+       
+    }
+}
+
+#RightDiv{
+    height: 20vh;
+    width: 35vw;
+    /* border: solid white; */
+    
+
+    img{
+        /* height: 21vh; */
+        width: 14vw;
+    }
+
+}
+
+/* seekBar */
+
+#seekbarsection{
+    height: 12vh;
+    width: 92vw;
+    margin: 0 3.6vw;
+    /* border: solid white; */
+    position: fixed;
+    
+    bottom: 2vh;
+    cursor: pointer;
+   
+    
+
+    img{
+        height: 6vh;
+        width: 6vh;
+    }
+}
+
+#seekBAR{
+    width: 90vw;
+    cursor: pointer;
+   
+}
+
+#disc {
+   
+    animation: rotatingDisc 10s linear infinite; 
+}
+
+
+@keyframes rotatingDisc {
+    0% {
+        transform: rotate(0deg); 
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+
+
+/* previous button */
+#previous{
+    transform: rotate(180deg);
+}
+
+
+
+/* button */
+#buttons{
+    /* border: solid wheat; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#stime{
+    height: 5vh;
+    width: 5vh;
+    /* border: solid wheat; */
+    margin: 0 1vw;
+}
+
+#etime{
+    height: 5vh;
+    width: 5vh;
+    /* border: solid wheat; */
+    margin: 0 1vw;
+}
+
+
+

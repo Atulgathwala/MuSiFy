@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuSiFy</title>
+    <link rel="stylesheet" href="./MuSiFy.css">
+</head>
+<body>
+<section id="main">
+
+<nav>
+    <div id="logo"><img src="./musify_logo.png" alt=""></div>
+    <div id="home">Home</div>
+    <input type="search" name="" id="searchbar" placeholder="Search here........">
+</nav>
+<h1 id="toph1">Without Music , life would be a mistake...</h1>
+
+
+<div id="Slider">
+    <div class="cards"  id="card1"><p class="number">1</p> <p id="recentadded">Recently added</p></div>
+    <div class="cards"  id="card2"><p class="number">2</p> <p id="recentadded">Recently added</p></div>
+    <div class="cards"  id="card3"><p class="number">3</p> <p id="recentadded">Recently added</p></div>
+    <div class="cards"  id="card4"><p class="number">4</p> <p id="recentadded">Recently added</p></div>
+    <div class="cards"  id="card5"><p class="number">5</p> <p id="recentadded">Recently added</p></div>
+    <div class="cards"   id="card6"><p class="number">6</p> <p id="recentadded">Recently added</p></div>
+    <div class="cards"  id="card7" ><p class="number">7</p> <p id="recentadded">Recently added</p></div>
+    <div class="cards"  id="card8" ><p class="number">8</p> <p id="recentadded">Recently added</p></div>
+    <div class="cards"  id="card9" ><p class="number">9</p> <p id="recentadded">Recently added</p></div>
+    <div class="cards"  id="card10" ><p class="number">10</p> <p id="recentadded">Recently added</p></div>
+</div>
+
+<section id="playMusic"> 
+    <div id="leftDiv">
+        <marquee id="marquee" behavior="scroll" direction="alterbate"> </marquee>
+        <img src="./playing.gif" alt="" id="playinggif">
+    </div>
+    <div id="RightDiv">
+        <img src="./rotatingDisc.png" alt="" id="disc">
+       
+    </div>
+    
+
+
+</section>
+
+<!-- seekbar Section -->
+
+<section id="seekbarsection">
+    <input type="range" id="seekBAR" min="0" value="0" max="100">
+<div id="buttons">
+    <div id="stime"></div>
+   
+    <div>  <img src="./icons8-fast-forward-round-100 (1).png" alt="" id="previous">
+        <img src="./play-button-100 backnone.png" alt="" id="playbutton">
+        <img src="./icons8-fast-forward-round-100 (1).png" alt="" id="next" ></div>
+        <div id="etime"></div>
+
+        
+</div>
+  
+
+
+
+</section>
+
+
+</section>
+
+<script src="./MuSiFy.js"></script>
+    
+</body>
+</html>
